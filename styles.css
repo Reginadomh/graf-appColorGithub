@@ -1,0 +1,98 @@
+/* Fuente global */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+/* Fondo con gradiente animado */
+.bg-gradient {
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Tarjetas estilo glassmorphism */
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Vista previa del color */
+.preview {
+  width: 100%;
+  height: 220px;
+  border-radius: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+}
+.preview:hover {
+  transform: scale(1.02);
+}
+
+/* Input estilizados */
+input[type="number"], input[type="text"] {
+  border-radius: 12px !important;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Color picker */
+input[type="color"] {
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  height: 45px;
+}
+
+/* Botones modernos */
+.btn {
+  border-radius: 12px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  font-weight: 600;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Botón degradado principal */
+.btn-dark {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  color: white;
+}
+.btn-dark:hover {
+  background: linear-gradient(135deg, #6b8cff, #875fc7);
+}
+
+/* Botón outline */
+.btn-outline-dark {
+  border: 2px solid #444;
+  color: #444;
+}
+.btn-outline-dark:hover {
+  background: #444;
+  color: white;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
